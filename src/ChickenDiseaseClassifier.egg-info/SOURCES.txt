@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/ChickenDiseaseClassifier/__init__.py
+src/ChickenDiseaseClassifier.egg-info/PKG-INFO
+src/ChickenDiseaseClassifier.egg-info/SOURCES.txt
+src/ChickenDiseaseClassifier.egg-info/dependency_links.txt
+src/ChickenDiseaseClassifier.egg-info/top_level.txt
+src/ChickenDiseaseClassifier/utils/__init__.py
+src/ChickenDiseaseClassifier/utils/common.py
