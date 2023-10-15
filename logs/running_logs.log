@@ -1,1 +1,9 @@
 [2023-10-11 19:37:21,792: INFO: main: Project is running]
+[2023-10-15 21:41:05,188: INFO: main: >>>>> stage Data Ingestion Stage started <<<<]
+[2023-10-15 21:41:05,189: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-15 21:41:05,189: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-15 21:41:05,189: INFO: common: created directory at: artifacts]
+[2023-10-15 21:41:05,189: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-15 21:41:12,763: INFO: main: >>>> stage Data Ingestion Stage completed<<<<
+
+x==============x]
