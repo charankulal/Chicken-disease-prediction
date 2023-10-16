@@ -7,3 +7,12 @@
 [2023-10-15 21:41:12,763: INFO: main: >>>> stage Data Ingestion Stage completed<<<<
 
 x==============x]
+[2023-10-16 21:54:23,716: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-16 21:54:23,716: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-16 21:54:23,724: INFO: common: created directory at: artifacts]
+[2023-10-16 21:54:23,724: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-16 22:01:06,771: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-16 22:01:06,773: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-16 22:01:06,775: INFO: common: created directory at: artifacts]
+[2023-10-16 22:01:06,775: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-16 22:03:40,674: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
