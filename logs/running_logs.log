@@ -21,3 +21,90 @@ x==============x]
 [2023-10-16 22:10:41,527: INFO: common: created directory at: artifacts]
 [2023-10-16 22:10:41,528: INFO: common: created directory at: artifacts/prepare_base_model]
 [2023-10-16 22:10:43,702: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-18 21:13:58,992: INFO: main: >>>>> stage Data Ingestion Stage started <<<<]
+[2023-10-18 21:13:58,992: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-18 21:13:59,006: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-18 21:13:59,006: INFO: common: created directory at: artifacts]
+[2023-10-18 21:13:59,014: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-18 21:14:04,886: INFO: main: >>>> stage Data Ingestion Stage completed<<<<
+
+x==============x]
+[2023-10-18 21:14:04,886: INFO: main: >>>>> stage Preparing Base Model Stage started <<<<]
+[2023-10-18 21:14:04,886: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-18 21:14:04,902: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-18 21:14:04,902: INFO: common: created directory at: artifacts]
+[2023-10-18 21:14:04,902: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-18 21:14:06,545: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-18 21:14:07,303: INFO: main: >>>> stage Preparing Base Model Stage completed<<<<
+
+x==============x]
+[2023-10-18 21:14:45,654: INFO: main: >>>>> stage Data Ingestion Stage started <<<<]
+[2023-10-18 21:14:45,654: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-18 21:14:45,654: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-18 21:14:45,654: INFO: common: created directory at: artifacts]
+[2023-10-18 21:14:45,654: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-18 21:14:49,013: INFO: main: >>>> stage Data Ingestion Stage completed<<<<
+
+x==============x]
+[2023-10-18 21:14:49,017: INFO: main: >>>>> stage Preparing Base Model Stage started <<<<]
+[2023-10-18 21:14:49,017: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-18 21:14:49,017: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-18 21:14:49,017: INFO: common: created directory at: artifacts]
+[2023-10-18 21:14:49,022: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-18 21:14:50,188: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-18 21:14:50,884: INFO: main: >>>> stage Preparing Base Model Stage completed<<<<
+
+x==============x]
+[2023-10-18 21:15:54,459: INFO: main: >>>>> stage Data Ingestion Stage started <<<<]
+[2023-10-18 21:15:54,459: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-18 21:15:54,459: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-18 21:15:54,459: INFO: common: created directory at: artifacts]
+[2023-10-18 21:15:54,459: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-18 21:15:58,752: INFO: main: >>>> stage Data Ingestion Stage completed<<<<
+
+x==============x]
+[2023-10-18 21:15:58,752: INFO: main: >>>>> stage Preparing Base Model Stage started <<<<]
+[2023-10-18 21:15:58,752: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-18 21:15:58,752: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-18 21:15:58,752: INFO: common: created directory at: artifacts]
+[2023-10-18 21:15:58,752: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-18 21:16:00,269: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-18 21:16:00,281: ERROR: main: [Errno 22] Unable to synchronously create file (unable to open file: name = 'artifacts\prepare_base_model\base_model.h5', errno = 22, error message = 'Invalid argument', flags = 13, o_flags = 302)]
+Traceback (most recent call last):
+  File "D:\PROJECTS\Chicken Disease Prediction\main.py", line 21, in <module>
+    obj.main()
+  File "D:\PROJECTS\Chicken Disease Prediction\src\ChickenDiseaseClassifier\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model.get_base_model()
+  File "D:\PROJECTS\Chicken Disease Prediction\src\ChickenDiseaseClassifier\components\prepare_base_model.py", line 22, in get_base_model
+    self.save_model(path=self.config.base_model_path, model=self.model)
+  File "D:\PROJECTS\Chicken Disease Prediction\src\ChickenDiseaseClassifier\components\prepare_base_model.py", line 70, in save_model
+    model.save(path)
+  File "D:\PROJECTS\Chicken Disease Prediction\.venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\PROJECTS\Chicken Disease Prediction\.venv\Lib\site-packages\h5py\_hl\files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PROJECTS\Chicken Disease Prediction\.venv\Lib\site-packages\h5py\_hl\files.py", line 241, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\h5f.pyx", line 122, in h5py.h5f.create
+OSError: [Errno 22] Unable to synchronously create file (unable to open file: name = 'artifacts\prepare_base_model\base_model.h5', errno = 22, error message = 'Invalid argument', flags = 13, o_flags = 302)
+[2023-10-18 21:17:14,075: INFO: main: >>>>> stage Data Ingestion Stage started <<<<]
+[2023-10-18 21:17:14,091: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-18 21:17:14,091: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-18 21:17:14,091: INFO: common: created directory at: artifacts]
+[2023-10-18 21:17:14,091: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-18 21:17:17,556: INFO: main: >>>> stage Data Ingestion Stage completed<<<<
+
+x==============x]
+[2023-10-18 21:17:17,556: INFO: main: >>>>> stage Preparing Base Model Stage started <<<<]
+[2023-10-18 21:17:17,556: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-18 21:17:17,556: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-18 21:17:17,556: INFO: common: created directory at: artifacts]
+[2023-10-18 21:17:17,556: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-18 21:17:18,870: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-18 21:17:19,716: INFO: main: >>>> stage Preparing Base Model Stage completed<<<<
+
+x==============x]
