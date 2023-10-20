@@ -1,1 +1,3 @@
-artifacts/*
+artifacts/data_ingestion/*
+artifacts/prepare_callbacks/*
+artifacts/training/*
