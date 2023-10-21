@@ -542,3 +542,102 @@ x==========x]
 [2023-10-21 23:18:35,902: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2023-10-21 23:57:41,210: INFO: main: >>>>> stage Data Ingestion Stage started <<<<]
+[2023-10-21 23:57:41,210: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-21 23:57:41,210: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-21 23:57:41,210: INFO: common: created directory at: artifacts]
+[2023-10-21 23:57:41,210: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-21 23:57:43,209: INFO: main: >>>> stage Data Ingestion Stage completed<<<<
+
+x==============x]
+[2023-10-21 23:57:43,209: INFO: main: >>>>> stage Preparing Base Model Stage started <<<<]
+[2023-10-21 23:57:43,209: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-21 23:57:43,209: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-21 23:57:43,209: INFO: common: created directory at: artifacts]
+[2023-10-21 23:57:43,209: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-21 23:57:44,007: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-21 23:57:44,574: INFO: main: >>>> stage Preparing Base Model Stage completed<<<<
+
+x==============x]
+[2023-10-21 23:57:44,574: INFO: main: *******************]
+[2023-10-21 23:57:44,574: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-10-21 23:57:44,574: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-21 23:57:44,574: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-21 23:57:44,574: INFO: common: created directory at: artifacts]
+[2023-10-21 23:57:44,574: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-21 23:57:44,590: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-21 23:57:44,594: INFO: common: created directory at: artifacts\training]
+[2023-10-22 00:07:06,068: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2023-10-22 00:07:06,068: INFO: main: *******************]
+[2023-10-22 00:07:06,068: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-10-22 00:07:06,068: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-22 00:07:06,076: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-22 00:07:06,076: INFO: common: created directory at: artifacts]
+[2023-10-22 00:09:58,816: INFO: common: json file saved at : scores.json]
+[2023-10-22 00:09:58,816: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2023-10-22 00:34:37,212: INFO: main: >>>>> stage Data Ingestion Stage started <<<<]
+[2023-10-22 00:34:37,224: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-22 00:34:37,229: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-22 00:34:37,231: INFO: common: created directory at: artifacts]
+[2023-10-22 00:34:37,232: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-22 00:34:39,525: INFO: main: >>>> stage Data Ingestion Stage completed<<<<
+
+x==============x]
+[2023-10-22 00:34:39,541: INFO: main: >>>>> stage Preparing Base Model Stage started <<<<]
+[2023-10-22 00:34:39,541: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-22 00:34:39,541: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-22 00:34:39,541: INFO: common: created directory at: artifacts]
+[2023-10-22 00:34:39,541: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-22 00:34:40,364: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-22 00:34:41,103: INFO: main: >>>> stage Preparing Base Model Stage completed<<<<
+
+x==============x]
+[2023-10-22 00:34:41,103: INFO: main: *******************]
+[2023-10-22 00:34:41,103: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-10-22 00:34:41,103: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-22 00:34:41,103: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-22 00:34:41,103: INFO: common: created directory at: artifacts]
+[2023-10-22 00:34:41,103: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-22 00:34:41,119: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-22 00:34:41,120: INFO: common: created directory at: artifacts\training]
+[2023-10-22 00:48:34,427: INFO: main: >>>>> stage Data Ingestion Stage started <<<<]
+[2023-10-22 00:48:34,427: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-22 00:48:34,427: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-22 00:48:34,427: INFO: common: created directory at: artifacts]
+[2023-10-22 00:48:34,427: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-22 00:48:39,107: INFO: main: >>>> stage Data Ingestion Stage completed<<<<
+
+x==============x]
+[2023-10-22 00:48:39,107: INFO: main: >>>>> stage Preparing Base Model Stage started <<<<]
+[2023-10-22 00:48:39,115: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-22 00:48:39,123: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-22 00:48:39,124: INFO: common: created directory at: artifacts]
+[2023-10-22 00:48:39,124: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-22 00:48:40,471: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-22 00:48:41,571: INFO: main: >>>> stage Preparing Base Model Stage completed<<<<
+
+x==============x]
+[2023-10-22 00:48:41,579: INFO: main: *******************]
+[2023-10-22 00:48:41,580: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-10-22 00:48:41,580: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-22 00:48:41,588: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-22 00:48:41,588: INFO: common: created directory at: artifacts]
+[2023-10-22 00:48:41,588: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-22 00:48:41,594: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-22 00:48:41,606: INFO: common: created directory at: artifacts\training]
+[2023-10-22 00:56:50,132: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2023-10-22 00:56:50,132: INFO: main: *******************]
+[2023-10-22 00:56:50,132: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-10-22 00:56:50,132: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-22 00:56:50,132: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-22 00:56:50,132: INFO: common: created directory at: artifacts]
+[2023-10-22 00:58:53,364: INFO: common: json file saved at : scores.json]
+[2023-10-22 00:58:53,366: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]

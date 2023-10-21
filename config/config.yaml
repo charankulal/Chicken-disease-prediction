@@ -3,7 +3,7 @@ artifacts_root: artifacts
 
 data_ingestion: 
   root_dir: artifacts/data_ingestion
-  local_data_file: "D:\\PROJECTS\\Dataset\\Dataset.zip"
+  local_data_file: "D:/PROJECTS/Dataset/Chicken-fecal-images.zip"
   unzip_dir: artifacts/data_ingestion
 
 prepare_base_model:

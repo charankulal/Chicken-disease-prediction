@@ -6,6 +6,7 @@ stages:
       - config/config.yaml
     outs:
       - artifacts/data_ingestion/Chicken-fecal-images
+        
 
 
   prepare_base_model:
