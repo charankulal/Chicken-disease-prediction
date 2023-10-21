@@ -501,3 +501,44 @@ x==============x]
 [2023-10-21 21:01:16,231: INFO: main: >>>>>> stage Training completed <<<<<<
 
 x==========x]
+[2023-10-21 21:57:16,085: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-21 21:57:16,092: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-21 21:57:16,094: INFO: common: created directory at: artifacts]
+[2023-10-21 22:00:36,805: INFO: common: json file saved at : scores.json]
+[2023-10-21 23:09:39,630: INFO: main: >>>>> stage Data Ingestion Stage started <<<<]
+[2023-10-21 23:09:39,630: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-21 23:09:39,646: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-21 23:09:39,647: INFO: common: created directory at: artifacts]
+[2023-10-21 23:09:39,648: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-21 23:09:44,473: INFO: main: >>>> stage Data Ingestion Stage completed<<<<
+
+x==============x]
+[2023-10-21 23:09:44,473: INFO: main: >>>>> stage Preparing Base Model Stage started <<<<]
+[2023-10-21 23:09:44,473: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-21 23:09:44,489: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-21 23:09:44,489: INFO: common: created directory at: artifacts]
+[2023-10-21 23:09:44,489: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-21 23:09:45,146: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-21 23:09:45,624: INFO: main: >>>> stage Preparing Base Model Stage completed<<<<
+
+x==============x]
+[2023-10-21 23:09:45,624: INFO: main: *******************]
+[2023-10-21 23:09:45,624: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-10-21 23:09:45,624: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-21 23:09:45,624: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-21 23:09:45,624: INFO: common: created directory at: artifacts]
+[2023-10-21 23:09:45,624: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-21 23:09:45,624: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-21 23:09:45,632: INFO: common: created directory at: artifacts\training]
+[2023-10-21 23:16:36,339: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2023-10-21 23:16:36,354: INFO: main: *******************]
+[2023-10-21 23:16:36,354: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-10-21 23:16:36,354: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\config\config.yaml loaded successfully]
+[2023-10-21 23:16:36,354: INFO: common: yaml file:D:\PROJECTS\Chicken Disease Prediction\params.yaml loaded successfully]
+[2023-10-21 23:16:36,354: INFO: common: created directory at: artifacts]
+[2023-10-21 23:18:35,902: INFO: common: json file saved at : scores.json]
+[2023-10-21 23:18:35,902: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
