@@ -690,3 +690,15 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^
 AttributeError: module 'keras.api._v2.keras' has no attribute 'load_model'
 [2023-10-23 21:19:45,526: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:19:45] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-10-23 21:22:31,628: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.146.149:8080]
+[2023-10-23 21:22:31,629: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-23 21:22:35,504: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:22:35] "GET / HTTP/1.1" 200 -]
+[2023-10-23 21:22:58,795: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:22:58] "POST /predict HTTP/1.1" 200 -]
+[2023-10-23 21:23:08,193: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:23:08] "POST /predict HTTP/1.1" 200 -]
+[2023-10-23 21:23:14,315: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:23:14] "POST /predict HTTP/1.1" 200 -]
+[2023-10-23 21:23:34,863: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:23:34] "POST /predict HTTP/1.1" 200 -]
+[2023-10-23 21:23:53,574: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001B162A4A840> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-10-23 21:23:53,587: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:23:53] "POST /predict HTTP/1.1" 200 -]
