@@ -712,3 +712,10 @@ AttributeError: module 'keras.api._v2.keras' has no attribute 'load_model'
 [2023-10-23 21:32:45,129: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:32:45] "POST /predict HTTP/1.1" 200 -]
 [2023-10-23 21:33:32,113: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:33:32] "GET / HTTP/1.1" 200 -]
 [2023-10-23 21:33:35,512: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:33:35] "GET / HTTP/1.1" 200 -]
+[2023-10-23 21:33:50,058: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.146.149:8080]
+[2023-10-23 21:33:50,058: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-23 21:33:53,990: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:33:53] "GET / HTTP/1.1" 200 -]
+[2023-10-23 21:33:54,098: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:33:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
