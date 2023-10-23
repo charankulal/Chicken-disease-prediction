@@ -641,3 +641,52 @@ x==========x]
 [2023-10-22 00:58:53,366: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2023-10-23 21:15:04,645: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.146.149:8080]
+[2023-10-23 21:15:04,652: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-23 21:15:18,919: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:15:18] "GET / HTTP/1.1" 200 -]
+[2023-10-23 21:16:26,672: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:16:26] "POST /predict HTTP/1.1" 200 -]
+[2023-10-23 21:16:42,888: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:16:42] "POST /predict HTTP/1.1" 200 -]
+[2023-10-23 21:16:46,971: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:16:46] "POST /predict HTTP/1.1" 200 -]
+[2023-10-23 21:17:00,290: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:17:00] "POST /predict HTTP/1.1" 200 -]
+[2023-10-23 21:17:20,981: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000023FC07BECA0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-10-23 21:17:21,000: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:17:21] "POST /predict HTTP/1.1" 200 -]
+[2023-10-23 21:19:24,391: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.146.149:8080]
+[2023-10-23 21:19:24,393: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-23 21:19:28,845: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:19:28] "GET / HTTP/1.1" 200 -]
+[2023-10-23 21:19:45,505: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\PROJECTS\Chicken Disease Prediction\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PROJECTS\Chicken Disease Prediction\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PROJECTS\Chicken Disease Prediction\.venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\PROJECTS\Chicken Disease Prediction\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PROJECTS\Chicken Disease Prediction\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PROJECTS\Chicken Disease Prediction\.venv\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "D:\PROJECTS\Chicken Disease Prediction\app.py", line 37, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PROJECTS\Chicken Disease Prediction\src\ChickenDiseaseClassifier\pipeline\predict.py", line 11, in predict
+    model = tf.keras.load_model(os.path.join("artifacts","training", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^
+  File "D:\PROJECTS\Chicken Disease Prediction\.venv\Lib\site-packages\tensorflow\python\util\lazy_loader.py", line 67, in __getattr__
+    return getattr(module, item)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'keras.api._v2.keras' has no attribute 'load_model'
+[2023-10-23 21:19:45,526: INFO: _internal: 192.168.146.149 - - [23/Oct/2023 21:19:45] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
