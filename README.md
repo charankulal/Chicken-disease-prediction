@@ -18,3 +18,16 @@
 8. Update the main.py
 9. Update the dvc.yaml
 
+## Steps to run:
+
+1. Create Virtual environment using VS Code(Preferred).
+2. Install requirements
+   ```python
+   pip install -r requirements.txt
+   ```
+
+
+3. Run the project
+   ```python
+   python app.py
+   ```
